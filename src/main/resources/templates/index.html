@@ -3,13 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       lang="en">
 
-    <h1>This will work</h1>
     <ul th:each="product : ${products}">
         <li th:text="${product.name}"></li>
-    </ul>
-
-    <h1>This will not work</h1>
-    <ul th:each="product : ${products}">
-        <li th:text="${#strings.toUpperCase(product.name)}"></li>
     </ul>
 </html>
